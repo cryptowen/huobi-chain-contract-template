@@ -22,12 +22,14 @@ the `src` directory contains the contract test.
 The main logic is in `src/contract.rs`.
 You can edit the file to add your own test cases.
 
-```
+The main dependency of the contract project is [`muta-std`](https://github.com/huwenchao/muta-std).
+You can find more helpful tools to interact with huobi-chain in this file <https://github.com/huwenchao/muta-std/blob/master/src/lib.rs>. Especially in `syscalls.rs` and `high_level.rs`.
+
+```sh
 # `make` will format the code, build the debug version binary and run the test.
 # The contract file will be at `contract/build/debug/contract`.
 $ make
 
 # The contract file will be at `contract/build/release/contract`.
 $ make build-contract-release
-
 ```
